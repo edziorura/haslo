@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ann">skopiowano</div>
+    <main>
+        <div class="input">
+            <input type="text" name="password" id="password" onkeyup="generate('password')">
+            <div class="text password">
+                nazwa
+            </div>
+        </div>
+        <div class="input">
+            <input type="text" name="site" id="site" onkeyup="generate('site')">
+            <div class="text site">
+                aplikacja
+            </div>
+        </div>
+        <div class="submit" onclick="copyToClipboard()">Kopiuj</div>
+        <div class="end-wrapper">
+            <div class="end-password" id="textToCopy"></div>
+            <div class="checkbox">
+                <input onclick="checkbox()" type="checkbox" class="pokaz">
+                <span class="hide"></span>        
+            <div class="checkbox">
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
