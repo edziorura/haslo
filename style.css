@@ -38,7 +38,7 @@ main input{
     padding: 15px 5px;
     font-size: 25px;
     border-radius: 10px;
-    background-color: #eeee00;
+    background-color: #f2595e;
     color: var(--main-color);
     cursor: pointer;
     width: 60%;
