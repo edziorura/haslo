@@ -103,6 +103,7 @@ button{
 .checkbox{
     position: relative;
     width: 50px;
+    cursor: pointer;
 }
 .end-wrapper{
     display: flex;
