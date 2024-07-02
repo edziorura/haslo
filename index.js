@@ -14,7 +14,7 @@ const digits = [
 
 const specialCharacters = [
     '!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.',
-    '/', ':', ';', '<', '=', '>', '?', '@', '[', '\\', ']', '^', '_', 
+    '/', ':', ';', '=', '?', '@', '[', '\\', ']', '^', '_', 
     '{', '|', '}', '~'
 ]
 const allCharacters = [...uppercaseLetters, ...lowercaseLetters, ...digits, ...specialCharacters]
