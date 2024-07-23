@@ -29,16 +29,16 @@ function generate(e){
     if(site.length>=4 && password.length>=4){
         endPassword += uppercaseLetters[password.charCodeAt(0) % uppercaseLetters.length]
         endPassword += lowercaseLetters[password.charCodeAt(1) % lowercaseLetters.length]
-        endPassword += digits[password.charCodeAt(2) % digits.length]
-        endPassword += specialCharacters[password.charCodeAt(3) % specialCharacters.length]
+        endPassword += digits[(password.charCodeAt(0) + 21) % digits.length]
+        endPassword += specialCharacters[(password.charCodeAt(1) + 10) % specialCharacters.length]
         endPassword += uppercaseLetters[site.charCodeAt(0) % uppercaseLetters.length]
         endPassword += lowercaseLetters[site.charCodeAt(1) % lowercaseLetters.length]
-        endPassword += digits[site.charCodeAt(2) % digits.length]
-        endPassword += specialCharacters[site.charCodeAt(3) % specialCharacters.length]
-        endPassword += uppercaseLetters[password.charCodeAt(3) % uppercaseLetters.length]
-        endPassword += lowercaseLetters[password.charCodeAt(2) % lowercaseLetters.length]
-        endPassword += digits[password.charCodeAt(1) % digits.length]
-        endPassword += specialCharacters[password.charCodeAt(0) % specialCharacters.length]
+        endPassword += digits[(site.charCodeAt(0) +1) % digits.length]
+        endPassword += specialCharacters[(site.charCodeAt(1) + 2) % specialCharacters.length]
+        endPassword += uppercaseLetters[(password.charCodeAt(0) + 4) % uppercaseLetters.length]
+        endPassword += lowercaseLetters[(password.charCodeAt(1) + 3) % lowercaseLetters.length]
+        endPassword += digits[(password.charCodeAt(1) + 5) % digits.length]
+        endPassword += specialCharacters[(password.charCodeAt(0) + 6) % specialCharacters.length]
     }
     document.querySelector(".end-password").innerHTML=endPassword
 
