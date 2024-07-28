@@ -26,7 +26,7 @@ function generate(e){
     const password = document.getElementById("password").value
     let endPassword = ""
 
-    if(site.length>=4 && password.length>=4){
+    if(site.length>=2 && password.length>=2){
         endPassword += uppercaseLetters[password.charCodeAt(0) % uppercaseLetters.length]
         endPassword += lowercaseLetters[password.charCodeAt(1) % lowercaseLetters.length]
         endPassword += digits[(password.charCodeAt(0) + 21) % digits.length]
